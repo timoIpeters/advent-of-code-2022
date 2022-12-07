@@ -6,10 +6,10 @@ Another year of Advent of Code. This year I will use TypeScript again :)
 
 | Day | Part1 | Part2 |
 |-----|-------|-------|
-| 01  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
-| 02  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
-| 03  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
-| 04  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
+| 01  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
+| 02  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
+| 03  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
+| 04  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
 | 05  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
 | 06  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
 | 07  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |

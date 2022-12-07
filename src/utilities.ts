@@ -1,6 +1,5 @@
 /* This file bundles some functions in a utility class that could be useful during this years Advent of Code */
 import * as fs from 'fs';
-import { fileURLToPath } from 'url';
 
 export class Utility {
   private static readInputFile(filename: string): string {

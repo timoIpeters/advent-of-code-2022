@@ -37,11 +37,7 @@ function solvePartOne(): void {
   const parsedInstructions = parseInstructions(instructions);
 
   // execute instructions
-  parsedInstructions.forEach((ins, idx) => {
-    if (stacks[ins.from] === undefined) {
-      console.log("INSTRUCTION: ", ins)
-      console.log("IDX: ", idx)
-    }
+  parsedInstructions.forEach(ins => {
     for(let i = 0; i < ins.amount; i++) {
       const moving = stacks[ins.from].pop() as string;
       stacks[ins.to].push(moving);
@@ -53,9 +49,38 @@ function solvePartOne(): void {
 }
 
 function solvePartTwo(): void {
-  const inputArr: string[] = Utility.readInputIntoStringArr(INPUT_FILE);
+  const stacks = [
+    ["W", "M", "L", "F"],
+    ["B", "Z", "V", "M", "F"],
+    ["H", "V", "R", "S", "L", "Q"],
+    ["F", "S", "V", "Q", "P", "M", "T", "J"],
+    ["L", "S", "W"],
+    ["F", "V", "P", "M", "R", "J", "W"],
+    ["J", "Q", "C", "P", "N", "R", "F"],
+    ["V", "H", "P", "S", "Z", "W", "R", "B"],
+    ["B", "M", "J", "C", "G", "H", "Z", "W"]
+  ];
 
-  console.log(`Part Two: ${inputArr}`);
+  // read instructions
+  const instructions = Utility.readInputIntoStringArr(INPUT_FILE).filter(line => line.startsWith("m"));
+  const parsedInstructions = parseInstructions(instructions);
+
+  // execute instructions
+  parsedInstructions.forEach(ins => {
+    let moving = [];
+    for(let i = stacks[ins.from].length - 1, j = 0; j < ins.amount; i--, j++) {
+      const itemToMove = stacks[ins.from].pop() as string;
+      moving.unshift(itemToMove);
+    }
+
+    moving.forEach(item => {
+      stacks[ins.to].push(item);
+    })
+  });
+
+  const result = stacks.reduce((acc, curr) => acc + curr.pop(), "");
+
+  console.log(`Part Two: ${result}`);
 }
 
 function parseInstructions(instructions: string[]): Instruction[] {

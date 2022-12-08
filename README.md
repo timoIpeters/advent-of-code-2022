@@ -11,7 +11,7 @@ Another year of Advent of Code. This year I will use TypeScript again :)
 | 03  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
 | 04  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
 | 05  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
-| 06  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
+| 06  |  <ul><li>- [X] </li><ul>  |  <ul><li>- [X] </li><ul>  |
 | 07  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
 | 08  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
 | 09  |  <ul><li>- [ ] </li><ul>  |  <ul><li>- [ ] </li><ul>  |
